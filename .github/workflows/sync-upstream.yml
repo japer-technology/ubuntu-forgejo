@@ -454,7 +454,10 @@ jobs:
                       )
 
           subprocess.run(["git", "-C", str(output), "init", "-q"], check=True)
-          subprocess.run(["git", "-C", str(output), "add", "--all"], check=True)
+          subprocess.run(
+              ["git", "-C", str(output), "add", "--all", "--force"],
+              check=True,
+          )
           standalone_tree = subprocess.check_output(
               ["git", "-C", str(output), "write-tree"],
               text=True,
@@ -802,7 +805,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          git -C target add --all
+          git -C target add --all --force
           if git -C target diff --cached --quiet; then
             echo "Already synchronized with ubuntu-zombie."
             echo "### Already synchronized" >>"$GITHUB_STEP_SUMMARY"
