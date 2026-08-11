@@ -1,5 +1,8 @@
 # Forgejo
 
+> [!WARNING]
+> This is pre-alpha. It is not yet conformant or safe for real execution.
+
 This directory is the independently versioned Forgejo infrastructure product.
 It owns the private Forgejo server, PostgreSQL role and database, Caddy route,
 local CA export, host trust, Avahi advertisement, and `forgejo.service`.
