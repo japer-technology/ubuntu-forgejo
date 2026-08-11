@@ -1,0 +1,63 @@
+{
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "Makefile",
+    "PRODUCT.json",
+    "README.md",
+    "UPSTREAM.md",
+    "VERSION",
+    "docs/ARCHITECTURE.md",
+    "docs/CONFIGURATION.md",
+    "docs/INSTALLATION.md",
+    "docs/OPERATIONS.md",
+    "docs/RECOVERY.md",
+    "docs/RELEASE.md",
+    "docs/SECURITY.md",
+    "docs/TESTING.md",
+    "family/schemas/audit-event-v1.schema.json",
+    "family/schemas/catalog-v1.schema.json",
+    "family/schemas/installation-v1.schema.json",
+    "family/schemas/inventory-v1.schema.json",
+    "family/schemas/product-v1.schema.json",
+    "family/schemas/receipt-v1.schema.json",
+    "family/schemas/request-v1.schema.json",
+    "family/schemas/response-v1.schema.json",
+    "payload/agent/forgejo/__init__.py",
+    "payload/agent/forgejo/management.py",
+    "payload/agent/requirements.lock",
+    "payload/logrotate/forgejo",
+    "payload/systemd/forgejo.service",
+    "scripts/manage.sh",
+    "tests/fixtures/forgejo-runner-config.yaml",
+    "tests/integration/test_management.py",
+    "tests/unit/test_boundary_assets.py",
+    "tests/unit/test_management.py",
+    "tests/vm/lifecycle.sh"
+  ],
+  "schema_version": 2,
+  "source_repository": "japer-technology/ubuntu-zombie",
+  "sources": [
+    {
+      "object": "b61acb08e0a54edd8029aac53645a530afdb1f97",
+      "source_path": "products/forgejo",
+      "target_path": "."
+    },
+    {
+      "object": "bf24e4a6bd6e51d46518805a3121a0e546d93f12",
+      "source_path": "family/schemas",
+      "target_path": "family/schemas"
+    },
+    {
+      "object": "807beab46186fe214a75850f798785274654f0a4",
+      "source_path": "LICENSE",
+      "target_path": "LICENSE"
+    },
+    {
+      "object": "c6a2edf4cd56e3741fa183cfc1215881eb2962c4",
+      "source_path": "payload/etc/forgejo-runner-config.yaml",
+      "target_path": "tests/fixtures/forgejo-runner-config.yaml"
+    }
+  ],
+  "standalone_tree": "727a15b360a9fcb944eaee78e910bbc19f7d47ee"
+}
